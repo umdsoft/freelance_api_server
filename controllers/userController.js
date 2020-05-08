@@ -17,7 +17,8 @@ exports.register = async (req,res)=>{
         password: password,
         isAdmin: false,
         country: req.body.country,
-        speciality: req.body.speciality
+        speciality: req.body.speciality,
+        date: Date.now()
     })
 
     user.save()
