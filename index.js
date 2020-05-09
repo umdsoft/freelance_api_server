@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const PORT = 5000;
 const app = express();
 
-const apiIndex = require('./routes/index');
+const apiIndex = require('./router/index');
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static('uploads'));
