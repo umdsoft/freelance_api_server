@@ -12,7 +12,7 @@ mongoose.connect(config.mongoUri,{useNewUrlParser: true, useUnifiedTopology: tru
 
 mongoose.set('useFindAndModify',false);
 
-router.post('/register',userController.register);
+router.post('/reg',userController.register);
 router.post('/login',userController.login);
 
 module.exports = router;

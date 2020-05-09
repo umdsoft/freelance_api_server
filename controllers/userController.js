@@ -23,10 +23,10 @@ exports.register = async (req,res)=>{
 
     user.save()
         .then(()=>{
-            res.status(200).json("Success");
+            res.status(200).json({message: "Success"});
         })
         .catch((err)=>{
-            res.json("Error",err)
+            res.send("Error", err)
         })
 };
 

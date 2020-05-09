@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static('uploads'));
 
-app.use('/apu',apiIndex);
+app.use('/api',apiIndex);
 app.get('/', function (req,res){
    res.send("Hello Server");
 })
